@@ -13,6 +13,10 @@ const argv = yargs
     .alias('help','h')
     .argv;
 console.log(argv);
+var encode = encodeURI("Hello , I Am Aayush");
+var decode = decodeURI(encode);
+console.log(encode,decode);
+
 request({
     url:'https://www.google.com/',
     json: true
